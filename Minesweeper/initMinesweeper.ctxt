@@ -1,0 +1,18 @@
+#BlueJ class context
+comment0.params=
+comment0.target=initMinesweeper()
+comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ initMinesweeper.\r\n\ \r\n
+comment1.params=
+comment1.target=void\ spawnBlocks()
+comment2.params=
+comment2.target=void\ spawnMines()
+comment3.params=block
+comment3.target=void\ infectSurroundingBlocks(block)
+comment4.params=
+comment4.target=boolean\ checkVictory()
+comment4.text=\ \ \ \ public\ void\ reiterateBlocks()\r\n\ \ \ \ {\r\n\ \ \ \ \ \ \ \ for(int\ x\=0;x<\=8;x++)\r\n\ \ \ \ \ \ \ \ {\r\n\ \ \ \ \ \ \ \ \ \ \ \ for(int\ y\=0;y<\=8;y++)\r\n\ \ \ \ \ \ \ \ \ \ \ \ {\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ block\ b\ \=\ (block)getObjectsAt(x,\ y,\ null).get(0);\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ if(b.blockStatus\=\=6)\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ {\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ for(int\ xx\=0;\ xx<\=2;\ xx++)\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ {\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ for(int\ yy\=0;\ yy<\=0;\ yy++)\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ {\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ if(((x+xx)-1)<8&&((x+xx)-1)>0)\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ {\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ block\ b2\ \=\ (block)getObjectsAt((x+xx)-1,\ (y+yy)+1,\ null).get(0);\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ if(b2.blockStatus\!\=6)\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ {\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ b2.blockStatus++;\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\r\n\ \ \ \ \ \ \ \ \ \ \ \ }\r\n\ \ \ \ \ \ \ \ }\r\n\ \ \ \ }\r\n
+comment5.params=
+comment5.target=void\ winGame()
+comment6.params=
+comment6.target=void\ loseGame()
+numComments=7
